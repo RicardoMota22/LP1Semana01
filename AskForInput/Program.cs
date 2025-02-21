@@ -15,12 +15,21 @@ namespace AskForInput
 
             
             //Console.WriteLine(str);
-            Console.WriteLine(i);
+            //Console.WriteLine(i);
 
 
 
             Console.WriteLine("Insert real number: ");
             string str2 = Console.ReadLine();//Asks for an input from user
+
+            float f =float.Parse(str2);
+
+            //Console.WriteLine(f);
+
+
+            string s = $"{i} mais {f} e' igual a {i + f}";
+
+            Console.WriteLine(s);
         }
     }
 }
