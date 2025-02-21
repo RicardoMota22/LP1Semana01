@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Text;
 
 namespace Smiley
@@ -12,11 +13,25 @@ namespace Smiley
             Console.WriteLine("Insere codigo  : ");
             string str = Console.ReadLine();//Asks for an input from user
 
-            //Print of Unicode
-            char copyrightSymbol = '\u00A9';
+            //From string to int
+            int str2= int.Parse(str );
 
-            Console.WriteLine(str);
-            Console.WriteLine(copyrightSymbol);
+            //Print of Unicode
+
+            string str3 = $"'{str2:x}'"; //Calculates Hexadecimal
+
+            
+
+            byte[] bytes = Encoding.UTF8.GetBytes(str);
+
+            string hexString = BitConverter.ToString(bytes).Replace("-", "");
+
+            //Console.WriteLine("Original String: " + str);
+            Console.WriteLine("Caráter Unicode : " + hexString);
+            Console.WriteLine(str3);
+             
+            
+            
         }
     }
 }
