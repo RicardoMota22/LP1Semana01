@@ -35,6 +35,13 @@ namespace VariousTypes
             char newLine = '\u000A';
             char heart = '\u2764';
 
+            //Real Variables
+            //Float, decimal, double 
+
+            double x = 3.145;
+            float y = 3.145f;
+            decimal z = 3.145m;
+
 
 
             //Mostrar Valor no ecra 
@@ -46,6 +53,11 @@ namespace VariousTypes
             Console.WriteLine(copyrightSymbol);
             Console.WriteLine(newLine);
             Console.WriteLine(heart);
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+
         
         
         
