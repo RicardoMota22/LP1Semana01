@@ -46,7 +46,7 @@ namespace VariousTypes
             //2 possible values, either true or false 
             
             bool condition = 5 > 3; //Answer is True
-            bool condition2 = 3 > 5;
+            bool condition2 = 3 > 5; //Answer is False 
 
 
 
