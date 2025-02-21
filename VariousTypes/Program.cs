@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Text; // Start of the program
 using System.ComponentModel;
 
 namespace VariousTypes
 {
     public class Program
     {
+        //Output encoding did not work here
         private static void Main(string[] args)
         {
             Console.WriteLine("Hello LP1!");
+            Console.OutputEncoding = Encoding.UTF8;//
 
             // Declarar variavel
             //int numero;
@@ -23,10 +26,28 @@ namespace VariousTypes
 
 
 
+            //char = stores single characters, such as 'a' or 'B'. Char values
+            // are surrounded by single quotes
+            //More complex symbols need unicodes
+            char myletter = 'D';
+
+            char copyrightSymbol = '\u00A9';
+            char newLine = '\u000A';
+            char heart = '\u2764';
+
+
+
             //Mostrar Valor no ecra 
             Console.WriteLine(numero);
 
             Console.WriteLine(pi);
+
+            Console.WriteLine(myletter);
+            Console.WriteLine(copyrightSymbol);
+            Console.WriteLine(newLine);
+            Console.WriteLine(heart);
+        
+        
         
         }
 
