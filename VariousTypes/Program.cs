@@ -39,8 +39,15 @@ namespace VariousTypes
             //Float, decimal, double 
 
             double x = 3.145;
-            float y = 3.145f;
-            decimal z = 3.145m;
+            float y = 3.145f; //requer f or F ao fim
+            decimal z = 3.145m; //requer m or M ao fim
+
+            //Boolean 
+            //2 possible values, either true or false 
+            
+            bool condition = 5 > 3; //Answer is True
+            bool condition2 = 3 > 5;
+
 
 
 
@@ -57,6 +64,9 @@ namespace VariousTypes
             Console.WriteLine(x);
             Console.WriteLine(y);
             Console.WriteLine(z);
+
+            Console.WriteLine(condition);
+            Console.WriteLine(condition2);
 
         
         
